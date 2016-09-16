@@ -1,4 +1,4 @@
-#Hola
+#Avui hem aprés a utilitzar GitHub
 
 ##Practica1
 
