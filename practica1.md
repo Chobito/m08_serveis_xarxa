@@ -32,4 +32,14 @@ ifconfig hola mtu 9000
 
 #7 
 /etc/resolv.conf
-	Pedro Romero Aguado.
+
+#8
+	/etc/sysconfig/network-scripts/ifcfg-enp5s0	
+	IPADDR=172.16.0.18
+	NETMASK=255.255.0.0
+	NETWORK=172.16.0.0
+	
+	nmcli export
+
+#9
+	echo "SUBSYSTEM=="net",ATTR{address}=="40:8d:5c:e2:ca:97", NAME="Proba" " > /etc/udev/rules.d/70-persistent-net.rules
