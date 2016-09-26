@@ -23,12 +23,12 @@ ifconfig hola mtu 9000
 
 	91.33 inbound
 	91.44 outbound
-#Es la mateixa per que el switch limita la velocitat a 100 Mbpps
+	Es la mateixa per que el switch limita la velocitat a 100 Mbpps
 
 #6
  
-#nmcli connection add type ethernet ifname hola ip4 172.16.0.18/16
-#nmcli connection up ethernet-hola
+	nmcli connection add type ethernet ifname hola ip4 172.16.0.18/16
+	nmcli connection up ethernet-hola
 
 #7 
 /etc/resolv.conf
