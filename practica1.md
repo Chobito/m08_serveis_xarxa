@@ -39,7 +39,7 @@ ifconfig hola mtu 9000
 	NETMASK=255.255.0.0
 	NETWORK=172.16.0.0
 	
-	nmcli export
+	No fa falta , per default fa YES
 
 #9
 	echo "SUBSYSTEM=="net",ATTR{address}=="40:8d:5c:e2:ca:97", NAME="Proba" " > /etc/udev/rules.d/70-persistent-net.rules
