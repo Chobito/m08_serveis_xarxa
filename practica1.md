@@ -42,7 +42,8 @@ ifconfig hola mtu 9000
 	No fa falta , per default fa YES
 
 #9
-	echo "SUBSYSTEM=="net",ATTR{address}=="40:8d:5c:e2:ca:97", NAME="Proba" " > /etc/udev/rules.d/70-persistent-net.rules
+
+	echo "SUBSYSTEM=="net",ACTION=="add", DRIVERS=="?*",ATTR{address}=="40:8d:5c:e2:ca:97",ATTR{type}=="1", KERNEL=="e*", 		NAME="Proba" " > /etc/udev/rules.d/70-persistent-net.rules
 
 #10
 	dig $(dnsdomainname)     <> Traduïr un nom de domini per la seva/seves adreces IP
