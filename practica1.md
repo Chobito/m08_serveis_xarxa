@@ -45,5 +45,5 @@ ifconfig hola mtu 9000
 	echo "SUBSYSTEM=="net",ATTR{address}=="40:8d:5c:e2:ca:97", NAME="Proba" " > /etc/udev/rules.d/70-persistent-net.rules
 
 #10
-	dig $(dnsdomainname)
-	nslookup 192.168.0.10
+	dig $(dnsdomainname)     <> Traduïr un nom de domini per la seva/seves adreces IP
+	nslookup 192.168.0.10	 <> Trobar el nom de domini a partir d'una adreça IP
