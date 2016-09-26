@@ -27,8 +27,8 @@ ifconfig hola mtu 9000
 
 #6
  
-#*nmcli connection add type ethernet ifname hola ip4 172.16.0.18/16
-#*nmcli connection up ethernet-hola
+#nmcli connection add type ethernet ifname hola ip4 172.16.0.18/16
+#nmcli connection up ethernet-hola
 
 #7 
 /etc/resolv.conf
