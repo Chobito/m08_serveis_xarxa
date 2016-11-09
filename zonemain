@@ -1,0 +1,17 @@
+$TTL 86400
+@ IN SOA ns1.narcos.com. root.narcos.com. (
+	2013042220 ;Serial
+	3600	;Refresh
+	1800	;Retry
+	604800	;Expire
+	86400	;Minimum TTL
+)
+;Specify our two nameservers
+	IN	NS	ns1.narcos.com.
+;Resolve namserver hostnames to IP, replace with your two IP adresses
+ns1	IN	A	10.0.0.1
+ns2	IN	A	10.0.0.2
+
+;Define hostname -> IP pairs which you wish to 
+host1	IN	A	10.0.0.19
+host2	IN	A	10.0.0.25

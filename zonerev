@@ -1,0 +1,16 @@
+$TTL 86400
+@ IN SOA ns1.narcos.com. root.narcos.com. (
+	2013042220 ;Serial
+	3600	;Refresh
+	1800	;Retry
+	604800	;Expire
+	86400	;Minimum TTL
+)
+;Specify our two nameservers
+	IN	NS	ns1.narcos.com.
+$ORIGIN 0.0.10.in-addr.arpa.
+;Define hostip->hostname pairs which you wish to resolve
+1	IN	PTR	ns1.narcos.com.
+2	IN	PTR	ns2.narcos.com.
+19	IN	PTR	host1.narcos.com.
+25	IN	PTR	host2.narcos.com.
