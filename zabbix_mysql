@@ -1,0 +1,19 @@
+Mirar si /etc/zabbix/zabbix_agentd.d/ existeix, si no crearla
+Copiar /usr/local/etc/userparameter_mysql.conf a /etc/zabbix/zabbix_agentd.d
+Crear /var/lib/zabbix si no existe
+crear dentro de /var/lib/zabbix un fichero llamado .my.cnf con :
+
+[mysql]
+user=zabbix
+password=zabbix
+[mysqladmin]
+user=zabbix
+password=zabbix
+
+Check that your zabbix_server config file is including the /etc/zabbix/zabbix_agentd.d/*.conf :
+    vi /etc/zabbix/zabbix_agentd.conf
+    Include=/etc/zabbix/zabbix_agent.d/
+
+Restart mariadb y zabbix-agentd
+
+    service mysqld restart????
